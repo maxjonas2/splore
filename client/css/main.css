@@ -1,0 +1,270 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --default-space: 1rem;
+  font-size: 16px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: currentColor;
+}
+
+.font-light {
+  font-weight: lighter !important;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0px !important;
+}
+
+.flow > * + * {
+  margin-top: calc(var(--default-space) * 2) !important;
+}
+
+.flow-small > * + * {
+  margin-top: calc(var(--default-space) * 1) !important;
+}
+
+.centered-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.center {
+  text-align: center;
+}
+p.faded {
+  color: rgba(0, 0, 0, 0.38);
+}
+p.note {
+  font-size: 0.8rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.horizontal-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horizontal-items.start {
+  justify-content: start;
+  gap: 2em;
+}
+
+.horizontal-items.centered {
+  justify-content: center;
+  gap: 2rem;
+}
+
+.horizontal-items.double-gap {
+  gap: 4rem;
+}
+
+.object-fit-left {
+  object-position: center left;
+}
+
+.object-fit-right {
+  object-position: center right;
+}
+
+.swipable-containers {
+  height: 100vh;
+  will-change: auto;
+  transition: transform 0.5s ease;
+}
+.swipable-containers .container {
+  min-height: 100%;
+  touch-action: none;
+}
+
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --header-background: rgb(50, 50, 50);
+  --font-title: "Nunito", sans-serif;
+  --font-text: "Nunito", sans-serif;
+  --header-height: 4rem;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-text), "Helvetica", sans-serif;
+  background-color: var(--bg-color);
+  color: #d2d2d2;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nunito", serif;
+  letter-spacing: 0.6px;
+}
+
+.serif {
+  font-family: var(--font-title);
+}
+
+:is(h1, h2, h3, h4) + p {
+  margin-top: 0.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.text {
+  font-family: var(--font-text);
+}
+
+p {
+  line-height: 1.8;
+}
+
+:is(h1, h2, h3, h4, p).normal {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a,
+.btn-link {
+  font-weight: bold;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c8c8c8;
+}
+
+nav a:not(.btn-link):hover {
+  color: white;
+}
+
+.svg-link {
+  filter: brightness(0.65);
+  transition: filter 0.2s ease;
+}
+.svg-link:hover {
+  filter: brightness(1);
+}
+
+.btn-link {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #c8c8c8;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+.btn-link:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+section:not(.section-hero, .section-footer) {
+  padding-top: 2rem;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-family: var(--font-title);
+}
+
+.slide-on-view {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.5s ease;
+}
+
+.slide-on-view.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gradient-highlight {
+  background-image: linear-gradient(to right, #9e1f3a, rebeccapurple);
+  color: white;
+}
+@supports (background-clip: text) {
+  .gradient-highlight {
+    color: transparent;
+    background-clip: text;
+    width: fit-content;
+  }
+}
+.gradient-highlight.text-center {
+  margin: 0 auto;
+}
+
+.swipe-up-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#svg-arrow-up path {
+  animation: bob 0.65s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease;
+}
+@keyframes bob {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
