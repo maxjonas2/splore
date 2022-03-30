@@ -25,12 +25,16 @@
   letter-spacing: 0px !important;
 }
 
-.flow > * + * {
+.flow > * + *:not(.exception-flow) {
   margin-top: calc(var(--default-space) * 2) !important;
 }
 
-.flow-small > * + * {
+.flow-small > * + *:not(.exception-flow) {
   margin-top: calc(var(--default-space) * 1) !important;
+}
+
+.flow-large > * + *:not(.exception-flow) {
+  margin-top: calc(var(--default-space) * 3) !important;
 }
 
 .centered-items {

@@ -1,10 +1,4 @@
 .swipable-containers {
-  height: 100vh;
   will-change: auto;
   transition: transform 0.5s ease;
-
-  .container {
-    min-height: 100%;
-    touch-action: none;
-  }
 }
