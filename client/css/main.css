@@ -232,15 +232,14 @@ section:not(.section-hero, .section-footer) {
 
 .gradient-highlight {
   background-image: linear-gradient(to right, #9e1f3a, rebeccapurple);
-  color: white;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+   width: fit-content;
+   width: -moz-fit-content;
 }
-@supports (background-clip: text) {
-  .gradient-highlight {
-    color: transparent;
-    background-clip: text;
-    width: fit-content;
-  }
-}
+
 .gradient-highlight.text-center {
   margin: 0 auto;
 }
