@@ -1,11 +1,13 @@
+import React from "react";
+
 const firebaseConfig = {
-    apiKey: "AIzaSyA03QVPJ4AZd8UdJvW17VCNKDGWfxvG2bc",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "rebels-splore.firebaseapp.com",
     databaseURL: "https://rebels-splore-default-rtdb.firebaseio.com",
     projectId: "rebels-splore",
     storageBucket: "rebels-splore.appspot.com",
-    messagingSenderId: "292454204916",
-    appId: "1:292454204916:web:0fc3892101b60361b125a1",
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
     measurementId: "G-R38NB9L0FB"
   };
   
