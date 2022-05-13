@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SwipeGroup = ({children}) => {
-    return <div className="swipable-containers">
+const SwipeGroup = ({children, ...props}) => {
+    return <div className="swipable-containers" {...props}>
         {children}
     </div>
 }

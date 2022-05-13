@@ -17,13 +17,10 @@ const Homepage = () => {
               <h1 className="gradient-highlight upper black">
                 Welcome, Rebel!
               </h1>
-              <h3>Here are a few guideliens to get you started</h3>
+              <h3>Here are a few guidelines to get you started</h3>
               <div className="sample-sentences children-slide flow-small paragraph-medium">
-                <p>
-                  There are no rules (I mean, seriously. Just don't get kicked
-                  out. It's embarrasing).
-                </p>
-                <p>Your English is not terrible. You're just drunk.</p>
+                <p>There are no rules.</p>
+                <p>Your English is not that good. You're just drunk.</p>
                 <p>
                   There are teachers and monitors around. Feel free to scream
                   for help.
@@ -31,10 +28,6 @@ const Homepage = () => {
                 <p>
                   We, the Rebels, are nice, friendly people, but don't get
                   excited.
-                </p>
-                <p>
-                  This page is ultimately useless and the "Swipe Up" function
-                  doesn't work. Life is meaningless and we're all going to die.
                 </p>
                 <p className="gradient-highlight">
                   <strong>
@@ -50,7 +43,7 @@ const Homepage = () => {
                   viewBox="0 0 60 60"
                   id="svg-arrow-up"
                 >
-                  <g stroke="white" strokeWidth="4" fill="transparent">
+                  <g stroke="'wh'ite" strokeWidth="4" fill="transparent">
                     <path
                       d="M 10 40 L 30 15 L 50 40"
                       strokeLinecap="round"
@@ -64,7 +57,7 @@ const Homepage = () => {
           </div>
         </section>
       </Container>
-      <Container>
+      <Container centeredItems>
         <p>Hello world!</p>
       </Container>
     </SwipeGroup>

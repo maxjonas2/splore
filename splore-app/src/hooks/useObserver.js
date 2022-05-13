@@ -15,9 +15,9 @@ const useObserver = ref => {
     });
 
     observer.observe(ref.current);
-
-    return visible;
   });
+
+  return visible;
 };
 
 export default useObserver;

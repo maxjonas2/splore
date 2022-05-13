@@ -248,7 +248,7 @@ section:not(.section-hero, .section-footer) {
 .content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -287,6 +287,11 @@ section:not(.section-hero, .section-footer) {
 
 .gradient-highlight.text-center {
   margin: 0 auto;
+}
+
+.swipe-container {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .swipe-up-container {
