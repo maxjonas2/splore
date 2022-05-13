@@ -13,7 +13,7 @@ const Homepage = () => {
       <Container>
         <section>
           <div className="content">
-            <div className="children-slide flow-large">
+            <div className="children-slide flow">
               <h1 className="gradient-highlight upper black">
                 Welcome, Rebel!
               </h1>
@@ -43,7 +43,7 @@ const Homepage = () => {
                   viewBox="0 0 60 60"
                   id="svg-arrow-up"
                 >
-                  <g stroke="'wh'ite" strokeWidth="4" fill="transparent">
+                  <g stroke="white" strokeWidth="4" fill="transparent">
                     <path
                       d="M 10 40 L 30 15 L 50 40"
                       strokeLinecap="round"
