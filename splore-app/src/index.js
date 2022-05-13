@@ -1,26 +1,19 @@
-import ReactDom from 'react-dom/client';
-import React from 'react';
+import ReactDom from "react-dom/client";
+import React from "react";
 import "./css/main.css";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Homepage from './elements/page_templates/Homepage';
-import Teste from './elements/components/Teste';
-import firebaseConfig from './config/firebaseConfig';
-import {initializeApp} from 'firebase/app'
-
-export const firebaseApp = initializeApp(firebaseConfig);
+import Homepage from "./elements/page_templates/Homepage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
-   
-   return (
-   <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Homepage/>}/>
-            <Route path="/teste" element={<Teste/>}/>
-        </Routes>
-   </BrowserRouter>)
+  return (
+    <Router>
+      <Routes>
+        <Route path="/rebels" element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </Router>
+  );
+};
 
-}
-
-const root = ReactDom.createRoot(document.getElementById('root'));
-root.render(<App/>)
-
+const root = ReactDom.createRoot(document.getElementById("root"));
+root.render(<App />);

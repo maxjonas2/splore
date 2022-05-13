@@ -1,39 +1,24 @@
-import React, { useEffect, useState } from 'react'
-import {getDatabase, ref, onValue} from 'firebase/database';
-import { firebaseApp } from '../..';
-
-const useFirebase = (path = "draws/draw") => {
-
-    const [snapshot, setSnapshot] = useState({});
-
-    useEffect(() => {
-        const db = getDatabase(firebaseApp);
-        const drawDatabaseRef = ref(db, path);
-        onValue(drawDatabaseRef, snapshot => {
-          setSnapshot(snapshot.val());
-        });
-    }, [path]);
-
-    return snapshot;
-}
+import React from "react";
+import { useFirebase } from "../../hooks";
+import SwipeGroup from "../components/SwipeGroup";
+import Container from "../components/SwipeContainer";
 
 const Homepage = () => {
-    
-    const snapShot = useFirebase('draws/draw');
+  const snapShot = useFirebase("draws/draw");
 
-    console.log(snapShot);
+  console.log(snapShot);
 
   return (
-    <div className="swipable-containers" id="swipable-containers">
-      <div className="container">
+    <SwipeGroup>
+      <Container>
         <section>
           <div className="content">
             <div className="children-slide flow-large">
-              <h1 className="gradient-highlight upper black">Welcome, Rebel!</h1>
+              <h1 className="gradient-highlight upper black">
+                Welcome, Rebel!
+              </h1>
               <h3>Here are a few guideliens to get you started</h3>
-              <div
-                className="sample-sentences children-slide flow-small paragraph-medium"
-              >
+              <div className="sample-sentences children-slide flow-small paragraph-medium">
                 <p>
                   There are no rules (I mean, seriously. Just don't get kicked
                   out. It's embarrasing).
@@ -52,7 +37,9 @@ const Homepage = () => {
                   doesn't work. Life is meaningless and we're all going to die.
                 </p>
                 <p className="gradient-highlight">
-                  <strong><span className="highlight-size">Have fun!</span></strong>
+                  <strong>
+                    <span className="highlight-size">Have fun!</span>
+                  </strong>
                 </p>
               </div>
               <div className="swipe-up-container exception-flow">
@@ -76,31 +63,12 @@ const Homepage = () => {
             </div>
           </div>
         </section>
-      </div>
-      <div className="container" style={{display: 'none'}}>
-        <section>
-          <div className="content">
-            <div className="children-slide flow">
-              <h3>Here are a few things to get you started</h3>
-              <div className="sample-sentences children-slide flow-small">
-                <p>
-                  • There are no rules (I mean, seriously. Just don't get kicked
-                  out).
-                </p>
-                <p>• Lorem ipsum dolor sit amet consectetur.</p>
-                <p>
-                  • Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-                <p>
-                  • Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  )
-}
+      </Container>
+      <Container>
+        <p>Hello world!</p>
+      </Container>
+    </SwipeGroup>
+  );
+};
 
 export default Homepage;

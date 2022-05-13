@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
+    "client-react": "npm --prefix splore-app start  "
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxjonas2/splore.git"
+    "url": "https://github.com/maxjonas2/splore.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Max Jonas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/maxjonas2/splore/issues"
