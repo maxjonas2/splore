@@ -6,6 +6,6 @@ This is a personal project for creating an event pool website (a place where peo
 
 This is a hook that updates a component's state based on whether a particular element has become visible or come into the viewport. It's built on top of the Intersection Observer API, which has acquired widespread support in all major browsers (with the odd exception).
 
-### useFirebase Custom hook
+### useFirebase Custom Hook
 
-This is a hook which hides the implementation logic of connecting to and receiving data updates from Firebase Realtime Database. "useFirebase" will automatically update the application's state based on remote changes made to a Firebase Database. This is done through a real-time snapshot update provided by the "onValue" function callback present in the Firebase API.
+This is a hook which abstracts/hides the implementation logic of connecting to and receiving data updates from Firebase Realtime Database. "useFirebase" will automatically update the application's state based on remote changes made to a Firebase Database. This is done through a real-time snapshot update provided by the "onValue" function callback present in the Firebase API.
