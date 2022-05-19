@@ -1,6 +1,6 @@
 # Splore App
 
-This is a personal project for creating an event pool website (a place where people can search for events happening near them, or in other areas, based on personal interests). The idea is for the website to be entirely React-based, due to its app-like nature. Since the project is in its early inception, there isn't much relevant code yet, other than a little bit of boilerplate, some base CSS styles (which will be eventually converted into styled components, or CSS in JS) and a few custom hooks for helping with general modularity and reusability.
+This is a personal project for creating an event pool application (a place where people can search for events happening near them, or in other areas, based on personal interests). The idea is for the website to be entirely React-based, due to its app-like nature. Since the project is in its early inception, there isn't much relevant code yet, other than a little bit of boilerplate, some base CSS styles (which will be eventually converted into styled components, or CSS in JS) and a few custom hooks for helping with general modularity and reusability.
 
 ### useObserver Custom Hook
 
